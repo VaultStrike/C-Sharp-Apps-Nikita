@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        //ProcessManager.MainProcess();
-        Sport_App_Main.Test1();
+        ProcessManager.MainProcess();
+        //Sport_App_Main.Test1();
     }
 }
