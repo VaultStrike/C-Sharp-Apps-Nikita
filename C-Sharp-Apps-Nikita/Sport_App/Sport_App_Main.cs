@@ -25,6 +25,15 @@ namespace C_Sharp_Apps_Nikita.Sport_App
                 Console.WriteLine("");
                 ch++;
             }
+                        
+            ////הפעלה משחק בין הקבוצות
+            //Game firstGame = new Game(bayern, copenhagen, 0, 0, true, "00:00");
+            ////גול ראשון לקבוצה א
+            //firstGame.ScoreGoal(bayern);
+            ////גול ראשון לקבוצה ב
+            //firstGame.ScoreGoal(copenhagen);
+            ////סיום בתיקו 
+            //firstGame.FinishGame();
 
         }
         public static Season[] CreateChampionsLeagueMock()
