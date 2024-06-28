@@ -40,10 +40,8 @@ namespace C_Sharp_Apps_Nikita.BankApp
         }
         public void Withdraw(double amount)
         {
-            //if (this.balance - amount > 0)
-            //    this.balance -= amount;
-            //else
-                if (this.balance - amount > -this.overdraft)
+
+            if (this.balance - amount > -this.overdraft)
                 this.balance -= amount;
             else
                 Console.WriteLine("Error: Withdraw Above Limit!");
