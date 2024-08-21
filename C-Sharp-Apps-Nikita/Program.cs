@@ -6,8 +6,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        //ProcessManager.MainProcess();
+        ProcessManager.MainProcess();
         //Sport_App_Main.Test1();
-        ProjectTest.RunAllTests();
+        //ProjectTest.RunAllTests();
     }
 }
