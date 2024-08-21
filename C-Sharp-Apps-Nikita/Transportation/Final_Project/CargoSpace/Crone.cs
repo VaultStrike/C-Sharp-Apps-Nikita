@@ -122,7 +122,6 @@ namespace C_Sharp_Apps_Nikita.Transportation.Final_Project.CargoSpace
         {
             return currentWeight;
         }
-        //לא רוונטי למחלקה למחלקה הזאת
         public string GetPricingList()
         {
             return "";

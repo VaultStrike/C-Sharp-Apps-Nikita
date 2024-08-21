@@ -30,10 +30,10 @@ namespace C_Sharp_Apps_Nikita.Transportation.Final_Project
             if (Test8()) passedTests++; else failedTests++;
             if (Test9()) passedTests++; else failedTests++;
             if (Test10()) passedTests++; else failedTests++;
-            //if (DeliveryTest1()) passedTests++; else failedTests++;
-            //if (DeliveryTest2()) passedTests++; else failedTests++;
-            //if (DeliveryTest3()) passedTests++; else failedTests++;
-            //if (DeliveryTest4()) passedTests++; else failedTests++;
+            if (DeliveryTest1()) passedTests++; else failedTests++;
+            if (DeliveryTest2()) passedTests++; else failedTests++;
+            if (DeliveryTest3()) passedTests++; else failedTests++;
+            if (DeliveryTest4()) passedTests++; else failedTests++;
             if (DeliveryTest5()) passedTests++; else failedTests++;
 
             PrintInYellow($"=======================-Summary-==========================");
@@ -209,7 +209,6 @@ namespace C_Sharp_Apps_Nikita.Transportation.Final_Project
                 return false;
             }
         }
-
         static bool Test6()
         {
             PrintInYellow("-------------------------Test - 6-------------------------");
@@ -419,9 +418,6 @@ namespace C_Sharp_Apps_Nikita.Transportation.Final_Project
                 return false;
             }
         }
-
-
-
 
 
         static bool DeliveryTest1()
@@ -705,30 +701,5 @@ namespace C_Sharp_Apps_Nikita.Transportation.Final_Project
             Console.ResetColor();
         }
        
-
-        static void Holder()
-        {
-            //Ports
-            Port port1 = new Port(CargoType.Airplane, "Israel", "TLV", "Ben Gurion", 12);
-            Port port2 = new Port(CargoType.Airplane, "Israel", "Eilat", "Ramon", 22);
-            //Items
-            IPortable item1 = new GeneralItem(1, 1, 1, 20, false, port1);
-            IPortable item2 = new GeneralItem(5, 5, 5, 20, false, port1);
-            IPortable item3 = new GeneralItem(10, 10, 10, 20, false, port1);
-            List<IPortable> items = new List<IPortable> { item1, item2, item3 };
-            //Containers
-            CargoContainer con1 = new CargoContainer(1000, 100_000);
-            CargoContainer con2 = new CargoContainer(1000, 100_000);
-            ////Drivers
-            Driver nick = new Driver("Nick", "Hayef", "1", CargoType.Airplane);
-            Driver stephan = new Driver("Stephan", "Kosher", "2", CargoType.Airplane);
-            Driver bobi = new Driver("Bobi", "Bonten", "1", CargoType.Train);
-            Driver nullTest = new Driver("Bobi", "Bonten", "1", CargoType.Null);
-            Driver[] AllDrivers = { nick, bobi, stephan };
-            ////Plane
-            AirePlane LY466 = new AirePlane(stephan, 1000, 100000, port1, port2, 1);
-            //Ships
-            Ship ST775 = new Ship(bobi, 20, 100_000, port1, port2, 1);
-        }
     }
 }

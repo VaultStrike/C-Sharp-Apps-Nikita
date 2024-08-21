@@ -25,19 +25,19 @@ namespace C_Sharp_Apps_Nikita.Transportation.Final_Project
         { return city; }
         public bool Load(IPortable item)
         {
-            return false;//לתקן
+            return false;
         }
         public bool Load(List<IPortable> items)
         {
-            return false;//לתקן
+            return false;
         }
         public bool Unload(IPortable item)
         {
-            return false;//לתקן
+            return false;
         }
         public bool Unload(List<IPortable> items)
         {
-            return false; //לתקן
+            return false; 
         }
         public virtual string GetPricingList()
         {
@@ -46,28 +46,28 @@ namespace C_Sharp_Apps_Nikita.Transportation.Final_Project
 
         public bool IsHaveRoom()
         {
-            return false; //לתקן
+            return false; 
         }
 
         public bool IsOverload()
         {
-            return false; //לתקן
+            return false; 
         }
         public double GetMaxVolume()
         {
-            return 0; //לתקן
+            return 0; 
         }
         public double GetMaxWeight()
         {
-            return 0; //לתקן
+            return 0; 
         }
         public double GetCurrentVolume()
         {
-            return 0;// לתקן
+            return 0;
         }
         public double GetCurrentWeight()
         {
-            return 0;//לתקן
+            return 0;
         }
         public override string ToString()
         {
