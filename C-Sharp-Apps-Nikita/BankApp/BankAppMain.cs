@@ -14,6 +14,7 @@ namespace C_Sharp_Apps_Nikita.BankApp
             Console.WriteLine("Name of application is BankApp");
             Console.WriteLine("How Can I Help?");
             Console.WriteLine();
+            Account.Test1();
         }
     }
 }
